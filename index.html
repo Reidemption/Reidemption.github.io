@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Scheherazade+New:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Reid Gubler | Personality Test</title>
+  </head>
+  <body>
+    <div id="entire-body">
+      <div id="header-area">
+        <h1>Discover your True Personality!</h1>
+        <button id="logInButton" class="button-looks">Log In</button>
+        <button id="createAccount" class="button-looks">Create Account</button>
+      </div>
+      <div id="user-modal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="modal-inputs">
+            <div class="input-format name-class" id="first-name">
+              <p>First Name:</p>
+              <input id="first-name-field" placeholder="First Name" />
+            </div>
+            <div class="input-format name-class" id="last-name">
+              <p>Last Name:</p>
+              <input id="last-name-field" placeholder="Last Name" />
+            </div>
+            <div class="input-format" id="email">
+              <p>Email:</p>
+              <input id="email-field" placeholder="Email" />
+            </div>
+            <div class="input-format" id="password">
+              <p>Password:</p>
+              <input
+                id="password-field"
+                type="password"
+                placeholder="Password"
+              />
+            </div>
+          </div>
+          <h4 class="warning"></h4>
+          <button id="create-account-button">Create Account</button>
+          <button id="log-in-button">Log In</button>
+        </div>
+      </div>
+      <div id="log-in-only">
+        <h3>
+          Enter the fields to discover your true personality and find people
+          like you!
+        </h3>
+        <div id="personality-field">
+          <div id="ccfield">
+            <input
+              id="OpennessField"
+              type="text"
+              placeholder="Enter Your Openness Level (1-10)"
+              required
+              minlength="1"
+              maxlength="2"
+            />
+            <input
+              id="ConscientiousnessField"
+              type="text"
+              placeholder="Enter Your Conscientiousness Level (1-10)"
+              required
+              minlength="1"
+              maxlength="2"
+            />
+            <input
+              id="ExtraversionField"
+              type="text"
+              placeholder="Enter Your Extraversion Level (1-10)"
+              required
+              minlength="1"
+              maxlength="2"
+            />
+            <input
+              id="AgreeablenessField"
+              type="text"
+              placeholder="Enter Your Agreeableness Level (1-10)"
+              required
+              minlength="1"
+              maxlength="2"
+            />
+            <input
+              id="NeuroticismField"
+              type="text"
+              placeholder="Enter Your Neuroticism Level (1-10)"
+              required
+              minlength="1"
+              maxlength="2"
+            />
+          </div>
+          <button id="gEditButton">Edit Personality</button>
+          <button id="submission">Submit Personality</button>
+        </div>
+      </div>
+      <div id="compliment-container">
+        <!-- <h4>Previous Personality Entries:</h4> -->
+        <ul id="storage"></ul>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
